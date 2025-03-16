@@ -1,0 +1,13 @@
+<?= $block->doSomethingImportant() ?>
+<span>Hello world</span>
+<span>
+    <!-- < ?php $viewModel = $block->getViewModel(); ? > -->
+    <?php $viewModel = $block->getData('viewModel'); ?>
+
+</span>
+<span>
+    <?= $viewModel->iAmViewModel(); ?>
+</span>
+<span>
+    END
+</span>
